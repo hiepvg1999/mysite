@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-03 07:07+0700\n"
+"POT-Creation-Date: 2021-08-04 11:03+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,6 +87,16 @@ msgstr "Sách:"
 #: templates/catalog/book_list.html:15
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
+
+#: templates/catalog/bookinstance_list_borrowed_user.html:4
+msgid "Borrowed books"
+msgstr "Sách mượn"
+
+#: templates/catalog/bookinstance_list_borrowed_user.html:17
+#, fuzzy
+#| msgid "There are no books in the library."
+msgid "There are no books borrowed."
+msgstr "Không mượn quyển sách nào."
 
 #: templates/index.html:5
 msgid "Local Library Home"
