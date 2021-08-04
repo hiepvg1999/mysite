@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 17:07+0700\n"
+"POT-Creation-Date: 2021-08-03 07:07+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,60 @@ msgstr "Danh mục sách"
 #: templates/base_generic.html:21
 msgid "All authors"
 msgstr "Danh mục tác giả"
+
+#: templates/catalog/book_detail.html:5
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#: templates/catalog/book_detail.html:7
+#, fuzzy
+#| msgid "Authors:"
+msgid "Author:"
+msgstr "Tác giả:"
+
+#: templates/catalog/book_detail.html:8
+msgid "Summary:"
+msgstr "Tóm tắt:"
+
+#: templates/catalog/book_detail.html:9
+msgid "ISBN:"
+msgstr "ISBN:"
+
+#: templates/catalog/book_detail.html:10
+msgid "Language:"
+msgstr "Ngôn ngữ:"
+
+#: templates/catalog/book_detail.html:11
+msgid "Genre:"
+msgstr "Thể loại:"
+
+#: templates/catalog/book_detail.html:14
+#, fuzzy
+#| msgid "Copies:"
+msgid "Copies"
+msgstr "Bản sao:"
+
+#: templates/catalog/book_detail.html:22
+msgid "Due to be returned:"
+msgstr "Đến hạn được trả lại:"
+
+#: templates/catalog/book_detail.html:24
+msgid "Imprint:"
+msgstr "Ấn bản:"
+
+#: templates/catalog/book_detail.html:25
+msgid "Id:"
+msgstr "Id:"
+
+#: templates/catalog/book_list.html:5
+#, fuzzy
+#| msgid "Books:"
+msgid "Book List"
+msgstr "Sách:"
+
+#: templates/catalog/book_list.html:15
+msgid "There are no books in the library."
+msgstr "Không có sách nào trong thư viện."
 
 #: templates/index.html:5
 msgid "Local Library Home"
@@ -69,3 +123,11 @@ msgstr "Bản sao có sẵn:"
 #: templates/index.html:13
 msgid "Authors:"
 msgstr "Tác giả:"
+
+#: templates/index.html:15
+msgid "You have visited this page"
+msgstr "Bạn đã xem trang này"
+
+#: templates/index.html:15
+msgid "time"
+msgstr "lần"
