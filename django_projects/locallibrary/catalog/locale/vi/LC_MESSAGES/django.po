@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 11:03+0700\n"
+"POT-Creation-Date: 2021-08-05 10:50+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: forms.py:16
+msgid "Invalid date - renewal in past"
+msgstr "Ngày không hợp lệ - gia hạn trong quá khứ"
+
+#: forms.py:20
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr "Ngày không hợp lệ - gia hạn trước hơn 4 tuần"
 
 #: templates/base_generic.html:5
 msgid "Local Library"
@@ -34,15 +42,52 @@ msgstr "Danh mục sách"
 msgid "All authors"
 msgstr "Danh mục tác giả"
 
-#: templates/catalog/book_detail.html:5
-msgid "Title:"
-msgstr "Tiêu đề:"
+#: templates/catalog/author_confirm_delete.html:5
+#, fuzzy
+#| msgid "Authors:"
+msgid "Delete Author"
+msgstr "Tác giả:"
 
-#: templates/catalog/book_detail.html:7
+#: templates/catalog/author_confirm_delete.html:7
+msgid "Are you sure you want to delete the author:"
+msgstr "Bạn có chắc chắn muốn xóa tác giả không:"
+
+#: templates/catalog/author_confirm_delete.html:11
+msgid "Yes, delete."
+msgstr "Có, xóa"
+
+#: templates/catalog/author_detail.html:5 templates/catalog/book_detail.html:7
 #, fuzzy
 #| msgid "Authors:"
 msgid "Author:"
 msgstr "Tác giả:"
+
+#: templates/catalog/author_detail.html:8
+#, fuzzy
+#| msgid "Books:"
+msgid "Books"
+msgstr "Sách:"
+
+#: templates/catalog/author_form.html:9
+#: templates/catalog/book_renew_librarian.html:13
+msgid "Submit"
+msgstr "Gửi"
+
+#: templates/catalog/author_list.html:5
+#, fuzzy
+#| msgid "Authors:"
+msgid "Author List"
+msgstr "Tác giả:"
+
+#: templates/catalog/author_list.html:17
+#, fuzzy
+#| msgid "There are no books in the library."
+msgid "There are no authors available."
+msgstr "Không mượn quyển sách nào."
+
+#: templates/catalog/book_detail.html:5
+msgid "Title:"
+msgstr "Tiêu đề:"
 
 #: templates/catalog/book_detail.html:8
 msgid "Summary:"
@@ -88,11 +133,21 @@ msgstr "Sách:"
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
 
+#: templates/catalog/book_renew_librarian.html:4
+msgid "Renew:"
+msgstr "Thay mới"
+
+#: templates/catalog/book_renew_librarian.html:5
+#, fuzzy
+#| msgid "Borrowed books"
+msgid "Borrower:"
+msgstr "Sách mượn"
+
 #: templates/catalog/bookinstance_list_borrowed_user.html:4
 msgid "Borrowed books"
 msgstr "Sách mượn"
 
-#: templates/catalog/bookinstance_list_borrowed_user.html:17
+#: templates/catalog/bookinstance_list_borrowed_user.html:16
 #, fuzzy
 #| msgid "There are no books in the library."
 msgid "There are no books borrowed."
