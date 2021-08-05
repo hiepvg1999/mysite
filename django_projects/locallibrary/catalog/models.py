@@ -71,7 +71,6 @@ class BookInstance(models.Model):
     @property
     def is_overdue(self):
         return self.due_back and date.today() > self.due_back
-
 class Author(models.Model):
     """Model representing an author."""
     first_name = models.CharField(max_length=100)
