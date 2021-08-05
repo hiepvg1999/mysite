@@ -73,7 +73,6 @@ def renew_book_librarian(request, pk):
 
             # redirect to a new URL:
             return HttpResponseRedirect(reverse('all-borrowed') )
-        return HttpResponse("Wrong Format")
 
     # If this is a GET (or any other method) create the default form.
     else:
